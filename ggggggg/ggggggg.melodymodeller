@@ -191,6 +191,8 @@
           id="0a117c63-45db-4bc8-b971-ea114f03363e" name="Logical Functions">
         <ownedLogicalFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
             id="501bb07f-2a61-4c7d-9d1f-ed328f01c0c3" name="Root Logical Function">
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="3bce26b3-0ff1-45ef-b6e1-9cdb2193a22a" name="LogicalFunction 1"/>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="d7555e30-e1d7-4859-b3d1-667c6be7d3b5" targetElement="#748dd13a-6917-4790-aeb8-bbecfd75e11b"
               sourceElement="#501bb07f-2a61-4c7d-9d1f-ed328f01c0c3"/>
@@ -210,11 +212,19 @@
             id="841bc5b4-c3ea-4325-8cb3-e63c3bd35584" name="Logical System">
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="54aa99e0-bb0c-4362-bac7-67187ed2210f"
               name="LC 1" abstractType="#4ee20477-5649-4548-95e3-b7256a5ae3a2"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="48ddf84a-b550-441d-bf65-583a50e9ee73"
+              name="LC 2" abstractType="#7aec691c-2ef5-4490-8853-33e9425e3ae2"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="b7cd51be-3c59-4d29-9b44-f80ee3981900" targetElement="#ab520fb2-0a10-49e3-82a6-80e66c90e348"
               sourceElement="#841bc5b4-c3ea-4325-8cb3-e63c3bd35584"/>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
-              id="4ee20477-5649-4548-95e3-b7256a5ae3a2" name="LC 1"/>
+              id="4ee20477-5649-4548-95e3-b7256a5ae3a2" name="LC 1">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="dda9301d-a12d-41f2-b396-2d66ad2165be" targetElement="#3bce26b3-0ff1-45ef-b6e1-9cdb2193a22a"
+                sourceElement="#4ee20477-5649-4548-95e3-b7256a5ae3a2"/>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="7aec691c-2ef5-4490-8853-33e9425e3ae2" name="LC 2"/>
         </ownedLogicalComponents>
       </ownedLogicalComponentPkg>
       <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
