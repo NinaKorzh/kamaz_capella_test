@@ -210,8 +210,13 @@
             name="Logical System" abstractType="#df102b63-aff0-4d23-a282-bf0b4477e296"/>
         <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
             id="df102b63-aff0-4d23-a282-bf0b4477e296" name="Logical System">
+          <ownedComponentExchanges xsi:type="org.polarsys.capella.core.data.fa:ComponentExchange"
+              id="22c315c1-9c4f-4d06-8155-b2fd2f15321f" name="C 1" source="#ec325167-acc8-4d5a-b713-c3b87071e003"
+              target="#28a7075f-0881-4252-8693-73da057af42e" kind="FLOW"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="da2bcc21-edef-4f8a-9a13-87ae8c0da397"
               name="LC 1" abstractType="#c5c97283-b5e3-426b-bc6a-32a66d9a85e2"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="8cdc25b4-67f5-4ff1-8732-32b0521571d0"
+              name="LC 2" abstractType="#57b818a9-9838-4169-8e70-50b0342368ad"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="c2b559d7-e78d-48a1-8063-d9d271ac540b" targetElement="#5f2907d6-2514-4e25-9d12-cf1ea0c701f5"
               sourceElement="#df102b63-aff0-4d23-a282-bf0b4477e296"/>
@@ -220,6 +225,15 @@
             <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
                 id="f204fc9e-6fe6-46c3-968c-c81e127df579" targetElement="#10933b4e-f599-4a98-8b85-ea4f523d62ba"
                 sourceElement="#c5c97283-b5e3-426b-bc6a-32a66d9a85e2"/>
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="ec325167-acc8-4d5a-b713-c3b87071e003" name="CP 1" orientation="OUT"
+                kind="FLOW"/>
+          </ownedLogicalComponents>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="57b818a9-9838-4169-8e70-50b0342368ad" name="LC 2">
+            <ownedFeatures xsi:type="org.polarsys.capella.core.data.fa:ComponentPort"
+                id="28a7075f-0881-4252-8693-73da057af42e" name="CP 1" orientation="IN"
+                kind="FLOW"/>
           </ownedLogicalComponents>
         </ownedLogicalComponents>
       </ownedLogicalComponentPkg>
