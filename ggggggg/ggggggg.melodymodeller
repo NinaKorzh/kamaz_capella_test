@@ -193,6 +193,8 @@
             id="501bb07f-2a61-4c7d-9d1f-ed328f01c0c3" name="Root Logical Function">
           <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
               id="3bce26b3-0ff1-45ef-b6e1-9cdb2193a22a" name="LogicalFunction 1"/>
+          <ownedFunctions xsi:type="org.polarsys.capella.core.data.la:LogicalFunction"
+              id="b6203d6b-2985-423c-8346-524ca6838725" name="LogicalFunction 2"/>
           <ownedFunctionRealizations xsi:type="org.polarsys.capella.core.data.fa:FunctionRealization"
               id="d7555e30-e1d7-4859-b3d1-667c6be7d3b5" targetElement="#748dd13a-6917-4790-aeb8-bbecfd75e11b"
               sourceElement="#501bb07f-2a61-4c7d-9d1f-ed328f01c0c3"/>
@@ -218,6 +220,8 @@
               name="LC 3" abstractType="#02e90e74-5b3b-41e9-85f8-e7954fcbd896"/>
           <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="9afa52be-943f-4d47-b3d4-9eb711c46a2e"
               name="LC 4" abstractType="#9c42f5b6-bcf5-4338-858b-afd2273d08f5"/>
+          <ownedFeatures xsi:type="org.polarsys.capella.core.data.cs:Part" id="2d175a3d-1853-46b1-93db-f6a33fe5b30e"
+              name="LC 5" abstractType="#eeb03422-a698-4597-848f-cf2a54e20bbf"/>
           <ownedComponentRealizations xsi:type="org.polarsys.capella.core.data.cs:ComponentRealization"
               id="b7cd51be-3c59-4d29-9b44-f80ee3981900" targetElement="#ab520fb2-0a10-49e3-82a6-80e66c90e348"
               sourceElement="#841bc5b4-c3ea-4325-8cb3-e63c3bd35584"/>
@@ -233,6 +237,12 @@
               id="02e90e74-5b3b-41e9-85f8-e7954fcbd896" name="LC 3"/>
           <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
               id="9c42f5b6-bcf5-4338-858b-afd2273d08f5" name="LC 4"/>
+          <ownedLogicalComponents xsi:type="org.polarsys.capella.core.data.la:LogicalComponent"
+              id="eeb03422-a698-4597-848f-cf2a54e20bbf" name="LC 5">
+            <ownedFunctionalAllocation xsi:type="org.polarsys.capella.core.data.fa:ComponentFunctionalAllocation"
+                id="d9c932fb-efd4-4330-b304-9b6fd41f36f2" targetElement="#b6203d6b-2985-423c-8346-524ca6838725"
+                sourceElement="#eeb03422-a698-4597-848f-cf2a54e20bbf"/>
+          </ownedLogicalComponents>
         </ownedLogicalComponents>
       </ownedLogicalComponentPkg>
       <ownedSystemAnalysisRealizations xsi:type="org.polarsys.capella.core.data.la:SystemAnalysisRealization"
