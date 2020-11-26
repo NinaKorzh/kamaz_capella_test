@@ -1,0 +1,1 @@
+# kamaz_capella_test
